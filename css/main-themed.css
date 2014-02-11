@@ -709,20 +709,12 @@ label:after {
 /* line 10, ../sass/components/_modal.scss */
 .tms .modal {
   position: fixed;
-  width: 90%;
+  width: 100%;
   height: auto;
   background: #e7dae6;
   padding: 10px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
-  border-radius: 6px;
   z-index: 500;
-  top: 50%;
-  left: 50%;
-  margin-top: -100px;
-  margin-left: -45%;
+  left: 0;
   display: none;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -737,7 +729,7 @@ label:after {
 .tms .modal:after {
   clear: both;
 }
-/* line 27, ../sass/components/_modal.scss */
+/* line 23, ../sass/components/_modal.scss */
 .tms .modal .close {
   font-family: "Tahoma", verdana, sans-serfif;
   font-size: 12px;
@@ -745,11 +737,11 @@ label:after {
   text-transform: uppercase;
   text-decoration: none;
 }
-/* line 32, ../sass/components/_modal.scss */
+/* line 28, ../sass/components/_modal.scss */
 .tms .modal .close:before {
   content: '';
 }
-/* line 37, ../sass/components/_modal.scss */
+/* line 33, ../sass/components/_modal.scss */
 .tms .preloader {
   position: fixed;
   width: 60%;

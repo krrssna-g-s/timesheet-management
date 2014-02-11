@@ -32,7 +32,12 @@ TSM  = (function ( $ ) {
     *             data-row-from : to tell the server which row it is from
     */
     function initModalOverlay(  ){
-
+       $('.modal').each(function (argument) {
+          var ht = $(this).outerHeight()
+          $(this).css({
+            bottom: -ht+'px'
+          });
+       })
        $('*[data-role]')
        .removeAttr('click')
        .on('click', function (argument) {
@@ -48,12 +53,13 @@ TSM  = (function ( $ ) {
             }
 
             if($role === 'modal'){
-
+              var $ht = $(modalTarget).outerHeight();
+              
               $(modalOverlay)
                .fadeIn(400, function ( ) {
                    $(modalTarget)
-                   .fadeIn('fast');
-                   $(modalTarget).find('.modal-content').hide()
+                   .delay(200).show().animate({opacity: 1, bottom:0},'slow');
+                   $(modalTarget).find('.modal-content').hide();    
                    $(modalTarget).find('.modal-content:first').show()
                 });
                 postscript(callback, fromRow);
