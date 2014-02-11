@@ -9,14 +9,18 @@
 }
 .modal{
 	position: fixed;
-	$width : 100%;
+	$width : 90%;
 	$height: 200px;
 	width: $width;
 	height: auto;
 	background: $modalBgColor;
 	@include padding-all(10px);
+	@include border-radius(6px);
 	z-index: 500;
-    left: 0;
+	top: 50%;
+    left: 50%;
+	margin-top: -$height/2;
+    margin-left: -$width/2 ;
 	display: none;
 	@include box-sizing(border-box);
 	@include clearfix();
