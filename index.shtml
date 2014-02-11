@@ -1,0 +1,10 @@
+<!--#include virtual="includes/head.html" -->
+<!--#include virtual="includes/header.html" -->
+<!-- content starts-->
+
+<!--#include virtual="includes/landing.html" -->
+
+
+<!-- content starts-->
+
+<!--#include virtual="includes/footer.html" -->

@@ -1,0 +1,11 @@
+<!--#include virtual="includes/head.html" -->
+<!--#include virtual="includes/header.html" -->
+<!-- content starts-->
+
+<!--#include virtual="includes/tasks_landing.html" -->
+<!--#include virtual="includes/modal_modify_task.html" -->
+<!--#include virtual="includes/modal_task_options.html" -->
+
+<!-- content starts-->
+
+<!--#include virtual="includes/footer.html" -->

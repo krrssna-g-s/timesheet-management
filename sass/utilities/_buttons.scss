@@ -1,0 +1,33 @@
+.btn{
+	@include padding(5px, 10px, 7px, 10px);
+	@include border-radius(6px);
+	@include font("Tahoma", 13px, $primaryButtonTx);
+	background: $primaryButtonBg;
+	cursor: pointer;
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	@include margin-right(5px);
+	border: none;
+	&.save{
+		background: $saveButtonBg;
+		color: $saveButtonTx;
+	}
+	&.cancel{
+		background: $cancelButtonBg;
+		color: $cancelButtonTx;
+	}
+	&.edit{
+		background: $editButtonBg;
+		color: $editButtonTx;
+	}
+	&.approve{
+		background: $approveButtonBg;
+		color: $approveButtonTx;
+	}
+	&.reject{
+		background: $rejectButtonBg;
+		color: $rejectButtonTx;
+	}
+
+}

@@ -1,0 +1,273 @@
+.details-content{
+	background: $detailsBg;
+	h2{
+
+		strong{
+			float: left;
+			font-weight: normal;
+			span{
+				@include font("Tahoma", 15px, $detailsTitleTx);
+				@include margin-right(5px);
+				color: $detailsTitleTx;
+				&:nth-child(2){
+					color: $detailsTitleTxSpl;
+				}
+			}
+			&:nth-child(2){
+				float: right;
+			}
+		}
+		font-weight: normal;
+		@include clearfix();
+		@include margin-all(0);
+		@include padding-all(10px);
+
+	}
+	table{
+		$width: 100%;
+		width: $width;
+		background: $detailsTableBg;
+		td{
+			width: $width/7;
+			text-align: center;
+			@include font("Tahoma", 12px, $detailsTableTx);
+			@include padding-all(8px);
+		}
+	}
+	.listing{
+
+		ul{
+			list-style: none;
+			@include margin-all(0);
+			@include padding-all(0);
+			li{
+				@include font("Tahoma", 12px, $detailsRowAltTx);
+				@include padding-all(5px);
+				@include padding-left(10px);
+				@include padding-right(10px);
+				cursor: pointer;
+				background: $detailsRowBg;
+				text-transform: uppercase;
+				&:nth-child(even){
+					background: $detailsRowBgAlt;
+				}
+				strong{
+					display: block;
+					font-weight: normal;
+				}
+				span{
+					color: $detailsRowTx;
+					display: block;
+					@include padding-top(3px);
+					strong{
+						display: block;
+						font-weight: normal;
+						color: $detailsRowAltTx;
+					}
+
+				}
+				&:hover, &.changed{
+					background: $detailsRowBgHover;
+				}
+			}
+		}
+		.rowContainer{
+			&.dirty{
+				li{
+					background: $detailsRowBgDirty !important;
+				}
+				
+			}
+			text-transform: uppercase;
+			&:nth-child(even){
+				li{
+					background: $detailsRowBgAlt;
+					&:hover, &.changed{
+						background: $detailsRowBgHover;
+					}
+
+				}
+			}
+			li{
+				background: $detailsRowBg;
+
+			}
+		}
+	}
+	.accordion{
+		margin-bottom: 5px;
+		h2{
+			
+			background: $detailsBg;
+		}
+		.listing{
+			display: none;
+
+			li{
+				@include padding-all(10px);
+				input[type=checkbox]{
+					margin-bottom: -3px; 
+				}
+				
+			}
+		}
+	}
+}
+.accordion-wrapper{
+	background: none;
+}
+.modal-content{
+	@include font("Tahoma", 13px, $modalSecondaryHeadingTx);
+	text-transform: uppercase;
+
+	h3, h4, h5{
+		@include font("Tahoma", 13px, $modalPrimaryHeadingTx);
+		font-weight: normal;
+		text-transform: uppercase;
+		@include margin-all(0);
+		@include padding(5px, 10px, 10px, 0px);
+		span{
+			color: $modalAltHeadingTx;
+			float: right;
+			@include margin-right(10px);
+		}
+	}
+	.descriptiveDetail, .timephasedvalues{
+		//color: #1e85dc;
+		font-size: 13px;
+		text-transform: uppercase; 
+		@include padding-top(5px);
+	}
+	h4{
+		color: $modalSecondaryHeadingTx;
+	}
+	h5{
+		text-transform: uppercase;
+		font-size: 11px;
+		color: $modalOtherHeadingTx;
+	}
+	table{
+		@include margin-top(10px);
+		@include margin-bottom(10px);
+		$width: 100%;
+		width: $width;
+		td{
+			width: $width/7;
+			@include font("Tahoma", 11px, $modalPrimaryHeadingTx);
+			@include padding-all(1px);
+			text-transform: uppercase;
+			input[type=text]{
+				width: $width;
+				@include font("Tahoma", 12px, $modalOtherHeadingTx);
+			}
+		}
+
+	}
+	.icons-view{
+		@include clearfix();
+		text-align:center;
+		padding-bottom: 20px;
+		padding-top: 30px;
+		vertical-align: top;
+		a{
+			width: 76px;
+			height: 76px;
+			
+			display: inline-block;
+			font-family: 'icomoon';
+			text-decoration: none;
+			position: relative;
+			float: left;
+			@include margin-all(6px);
+			
+			&:before{
+				
+				content: "\e609";
+				font-size: 76px;
+				color: $iconsBG;
+			}
+			i{
+				&:before{
+					content: "\e60b";
+					font-size: 21px;
+					color: $white;
+					position: absolute;
+					right: -1px;
+					top:-1px;
+					z-index: 1;
+					opacity: 0.6;
+					font-style: normal;
+				}
+			}
+			em{
+				&:before{
+					font-style: normal;
+					content: "\e60a";
+					font-size: 20px;
+					color: $black;
+					position: absolute;
+					right: 0px;
+					top:20px;
+					opacity: 0.3;
+				}
+			}
+			span{
+				width: 43px;
+				height: 43px;
+				display: block;
+				background: $white;
+				@include border-radius(50%);
+				position: absolute;
+				top: 16px;
+				left: 16px;
+				padding:8px;
+				color: $iconsColor;
+				&.recall{
+					@extend .icon-reload;
+					font-size: 28px;
+				}
+				&.delete{
+					@extend .icon-remove;
+					font-size: 28px;
+				}
+				&.changeview{
+					@extend .icon-List;
+					font-size: 28px;
+				}
+			}
+			strong{
+				font-weight: normal;
+				@include font(Tahoma, 13px, $iconsColor); 
+				text-transform: uppercase; 
+				display: block; 
+			}
+
+		}
+	}
+	&#view-tab{
+		display: none;
+	}
+	.task-controller{
+		p{
+
+			@include font("Tahoma", 12px, $modalOtherHeadingTx);
+			&:first-child{
+				color: $modalPrimaryHeadingTx;
+			}
+			span{
+				display: inline-block;
+				width: 70%;
+				&:nth-child(2){
+					width: 25%;
+					input{
+						width: 100%;
+						@include font("Tahoma", 12px, $modalOtherHeadingTx);
+					}
+				}
+			}
+			a{
+				color: $modalAltHeadingTx; 
+			}
+		}
+	}
+}

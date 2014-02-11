@@ -1,0 +1,45 @@
+mixin list
+  nav
+    ul
+      li foo
+      li bar
+      li baz
+
+mixin slideshow
+  header.slideshow-container
+    h1
+      span(data-picture='data-picture', data-alt='A giant stone face at The Bayon temple in Angkor Thom, Cambodia')
+        span(data-src='http://placehold.it/320x350')
+        span(data-src='http://placehold.it/480x350', data-media='(min-width: 400px)')
+        span(data-src='http://placehold.it/768x350', data-media='(min-width: 800px)')
+        span(data-src='http://placehold.it/1024x350', data-media='(min-width: 1000px)')
+        //Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. 
+        noscript
+          img(src='http://placehold.it/320x300', alt='A giant stone face at The Bayon temple in Angkor Thom, Cambodia')
+
+
+
+doctype html
+html
+  include ../includes/head
+body
+  - var stickyNav = true;
+
+  if stickyNav
+    header.main-header.sticky
+      +list()
+  else
+    header.main-header
+      +list()
+
+  +slideshow()
+
+  if stickyNav
+    div.container.stickyTop
+  else
+    div.container
+
+  include ../includes/foot
+
+
+      

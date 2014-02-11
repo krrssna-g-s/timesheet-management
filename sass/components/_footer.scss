@@ -1,0 +1,70 @@
+$footerIconWidth: 26px;
+$footerIconHeight: 26px;
+$footerFontSize: 10px;
+$footerFont: "Tahoma";
+$footerTrayHeight: 50px;
+$footerTrayPosition: fixed;
+
+footer{
+
+	@extend .footerIconsTray;
+
+}
+
+.footerIconsTray{
+		position: $footerTrayPosition;
+		background: $footerBgColor;
+		display: block;
+		bottom: 0;
+		width: 100%;
+		height: $footerTrayHeight;
+		ul{
+			$width: $footerIconWidth + 32;
+			list-style: none;
+			@include padding-all(0);
+			margin: 0 auto;
+			text-align: center;
+			
+			li{
+
+
+				float: left;
+				overflow: hidden;
+				display: inline-block;
+				text-align: center;
+				@include font($footerFont, $footerFontSize, $footerFontColor);
+				text-transform: uppercase;
+				@include padding-top(10px);
+				@include padding-bottom(8px);
+				width: $width;
+
+				a{
+					width: $footerIconWidth;
+					height: $footerIconHeight;
+					display: block;
+					margin: 0 auto;
+					top: -5px;
+					position: relative;
+					font-size: 26px;
+					text-decoration: none;
+					color: $footerFontColor;
+					&.icon-footer-time{
+						@extend .icon-time;
+					}
+					&.icon-footer-home{
+						@extend .icon-home;
+					}
+					&.icon-footer-approval{
+						@extend .icon-check-alt;
+					}
+					&.icon-footer-save{
+						@extend .icon-storage;
+					}
+					&.icon-footer-submit{
+						@extend .icon-login;
+					}
+				}
+			}
+			
+		}
+}

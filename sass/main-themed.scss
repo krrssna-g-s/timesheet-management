@@ -1,0 +1,14 @@
+@import "utilities/fonts";
+@import "utilities/normalize";
+@import "utilities/variables_main";
+@import "utilities/mediaqueries";
+@import "utilities/mixins";
+@import "utilities/buttons";
+
+
+
+// page wise css files
+.tms{
+	background: $mainBodyBg;
+	@import "components/page";
+}

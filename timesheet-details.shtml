@@ -1,0 +1,13 @@
+<!--#include virtual="includes/head.html" -->
+<!--#include virtual="includes/header.html" -->
+<!-- content starts-->
+
+<!--#include virtual="includes/timesheets_details.html" -->
+<!--#include virtual="includes/modal_modify_time.html" -->
+<!--#include virtual="includes/modal_add_new_time.html" -->
+<!--#include virtual="includes/modal_show_options.html" -->
+
+
+<!-- content starts-->
+
+<!--#include virtual="includes/footer.html" -->

@@ -1,0 +1,74 @@
+{
+	"name": "Mike Joltand",
+	"id":"123232323434",
+	"data": {
+		"options":[
+			{
+				"title": "Last Three Weeks",
+				"data":[
+					{
+						"date": "12/13/2013 - 12/20/2013",
+						"status": "In Progress",
+						"hours":"40:00",
+						"weekdata":["8:00","8:00","8:40","6:00","9:00","0:00"],
+						"detail":[
+							{
+								"title":"Mobile Timesheet Application",
+								"task":"UX review",
+								"hours": ["8:00","8:00","0:00","0:00","0:00","0:00","8:00"],
+								"date" : "12/13/2013",
+								"location" : "Alabama"
+							}
+						]
+					},
+					{
+						"date": "12/13/2013 - 12/20/2013",
+						"status": "In Progress",
+						"hours":"40:00",
+						"weekdata":["8:00","8:00","8:40","6:00","9:00","0:00"],
+						"detail":[
+							{
+								"title":"Mobile Timesheet Application",
+								"task":"UX review",
+								"hours": ["8:00","8:00","0:00","0:00","0:00","0:00","8:00"],
+								"date" : "12/13/2013",
+								"location" : "Alabama"
+							}
+						]
+					},
+					{
+						"date": "12/13/2013 - 12/20/2013",
+						"status": "In Progress",
+						"hours":"40:00",
+						"weekdata":["8:00","8:00","8:40","6:00","9:00","0:00"],
+						"detail":[
+							{
+								"title":"Mobile Timesheet Application",
+								"task":"UX review",
+								"hours": ["8:00","8:00","0:00","0:00","0:00","0:00","8:00"],
+								"date" : "12/13/2013",
+								"location" : "Alabama"
+							}
+						]
+					},
+					{
+						"date": "12/13/2013 - 12/20/2013",
+						"status": "In Progress",
+						"hours":"40:00",
+						"weekdata":["8:00","8:00","8:40","6:00","9:00","0:00"],
+						"detail":[
+							{
+								"title":"Mobile Timesheet Application",
+								"task":"UX review",
+								"hours": ["8:00","8:00","0:00","0:00","0:00","0:00","8:00"],
+								"date" : "12/13/2013",
+								"location" : "Alabama"
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	"locations":["Alabama","Alaska","Atlanta","Miami","Florida"]
+}

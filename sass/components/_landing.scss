@@ -1,0 +1,204 @@
+a{
+	cursor: pointer;
+}
+
+.container{
+	@include padding(20px, 10px, 20px, 10px);
+	min-height: 300px;
+	@include margin-top(40px);
+	@include margin-bottom(50px);
+	.home-bg{
+
+		background: $landingIconsBg;
+		@include border-radius(6px);
+		@include padding-all(10px);
+		@include padding-bottom(30px);
+		@include padding-top(30px);
+		
+		a{
+			width: 96px;
+			height: 96px;
+			
+			display: inline-block;
+			font-family: 'icomoon';
+			text-decoration: none;
+			position: relative;
+			@include margin-all(20px);
+			
+			&:before{
+				
+				content: "\e609";
+				font-size: 96px;
+				color: $iconsBG;
+			}
+			i{
+				&:before{
+					content: "\e60b";
+					font-size: 25px;
+					color: $white;
+					position: absolute;
+					right: 0px;
+					top:0px;
+					z-index: 1;
+					opacity: 0.6
+				}
+				font-style: normal;
+			}
+			em{
+				font-style: normal;
+				&:before{
+					content: "\e60a";
+					font-size: 25px;
+					color: $black;
+					position: absolute;
+					right: 0px;
+					top:24px;
+					opacity: 0.3
+				}
+			}
+			span{
+				width: 57px;
+				height: 57px;
+				display: block;
+				background: $white;
+				@include border-radius(50%);
+				position: absolute;
+				top: 19px;
+				left: 20px;
+				padding:10px;
+				color: $iconsColor;
+				&.icon-timesheet{
+					@extend .icon-time;
+					font-size: 35px;
+					line-height: 36px;
+				}
+				&.icon-tasks{
+					@extend .icon-List;
+					font-size: 30px;
+					line-height: 36px;
+				}
+				&.icon-approvals{
+					@extend .icon-approve3;
+					font-size: 30px;
+					line-height: 36px;
+				}
+			}
+			strong{
+				font-weight: normal;
+				@include font(Tahoma, 13px, $iconsTxColor); 
+				text-transform: uppercase;
+				display: block; 
+			}
+
+		}
+		text-align: center;
+		@include clearfix();
+		height: 100%;
+	}
+	&.timesheetContainer{
+		
+		position: relative;
+		h1{
+			@include margin-all(-10px);
+			@include margin-bottom(10px);
+			@include padding-all(10px);
+			@include padding-bottom(8px);
+			position: fixed;
+			top: 60px;
+			width: 100%;
+			z-index: 2;
+			background: $timeheetsHeadingBg;
+			@include font("Myriad Pro", 22px, $timeheetsHeadingTx); 
+			text-transform: uppercase;
+			font-weight: normal;
+			span{
+				font-size: 14px;
+				text-align: right;
+				@include padding-top(7px);
+			}
+		}
+		.date-container{
+			margin-top: 50px;
+			min-height: 40px;
+			@include clearfix();
+			span{
+				float: left;
+				@include padding(8px, 5px, 5px, 5px);
+				@include font("Tahoma", 13px, $headDateTx);
+				
+				ul{
+					list-style: none;
+					@include margin-all(0);
+					@include padding-all(0);
+					li{
+						display: inline-block;
+						width: 26px;
+						height: 26px;
+						@include margin(5px,0px,5px,16px);
+						overflow: hidden;
+						font-size: 26px;
+						cursor: pointer;
+						color: $iconsTx;
+						&.icon-add-timesheet{
+							@extend .icon-file-add;
+						}
+						&.icon-show-list{
+							@extend .icon-file-settings;
+						}
+					}
+				}
+				
+			}
+			span:nth-child(2){
+				@include padding-all(0);
+				float: right;
+			}
+		}
+		.table-bg{
+			background: $tableBorder;
+			@include padding-all(1px);
+			@include margin-top(10px);
+			border: none;
+			table{
+				width: 100%;
+
+				thead{
+					background: $tHeadBg;
+					@include font("Tahoma", 12px, $tHeadTx);
+					
+					th{
+						font-weight: normal;
+						text-transform: uppercase;
+						@include padding(10px, 10px, 10px,10px);
+						text-align: left;
+					}
+					th:nth-child(1){
+						width: 50%;
+						text-align: center;
+					}
+				}
+				tbody{
+					tr:nth-child(even){
+						background: $rowColor;
+					}
+					tr:nth-child(odd){
+						background: $rowColorAlt;
+					}
+					td{
+						@include padding(10px, 10px, 10px,10px);
+						@include font("Tahoma", 11px, $rowColotTx);
+						text-transform: uppercase;
+						border-bottom: 1px solid $tableBorder;
+						border-top: 1px solid $tableBorder;
+						border-collapse: collapse;
+						cursor: pointer;
+					}
+					tr:hover, tr.changed{
+						background: $rowColorHover;
+					}
+				}
+			}
+		}
+	}
+	
+}

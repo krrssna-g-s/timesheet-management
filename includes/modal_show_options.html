@@ -1,0 +1,39 @@
+<div class="modal " id="show_options">
+	<a href="#" class="pull-right close" data-role="dismiss" data-target="#show_options">X</a>
+	<div class="modal-content" id="icons-tab">
+		<div class="icons-view">
+			<a href="#" onclick="TSM.initPreloader('show');">
+				<i></i><em></em>
+				<span class="recall" onclick="TSM.initPreloader('show');"></span>
+				<strong>Recall</strong>
+			</a>
+			<a href="#">
+				<i></i><em></em>
+				<span class="delete"></span>
+				<strong>Delete</strong>
+			</a>
+			<a href="#">
+				<i></i><em></em>
+				<span class="changeview" data-display="#view-tab" data-container="#icons-tab"></span>
+				<strong>Change View</strong>
+			</a>
+		</div>
+		<p class="buttons-container">
+			<a href="#" data-role="dismiss" data-target="#show_options" class="btn cancel">Cancel</a>
+		</p>
+	</div>
+	<div class="modal-content" id="view-tab">
+		<h3>select view</h3>
+		<h4>New TimeSheet View</h4>
+		<label for="">
+			<select name="" id=""></select>
+		</label>
+		<h4>use this view to</h4>
+		<h3>current timesheet view</h3>
+		<div class="buttons-container">
+			<button class="main-submit btn save">confirm change</button>
+			<button class="main-submit btn cancel">cancel</button>
+			<button class="main-submit btn edit">b</button>
+		</div>
+	</div>
+</div>

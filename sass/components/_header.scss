@@ -1,0 +1,28 @@
+
+
+
+header{
+	background: $headerBG;
+	height: 50px;
+	display:block;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index:2;
+
+	a{
+		border: none;
+		text-decoration: none;
+		background: $headerLogo;
+		
+		width: $logoWidth;
+		height: $logoHeight;
+		display: block;
+		text-indent: -9999px;
+		@include margin-top(10px);
+		@include margin-bottom(5px);
+		@include margin-left(auto);
+		@include margin-right(auto);
+	}
+}
