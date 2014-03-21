@@ -1,17 +1,17 @@
 
-$mainBodyBg: #fff;
+$mainBodyBg: #ffffff; 
 
 /* buttons colors variables */
-$primaryButtonBg: #f4c641;
-$primaryButtonTx: #515e66;
+$primaryButtonBg: #490745;
+$primaryButtonTx: #fff;
 
-$saveButtonBg: #f4c641;
-$saveButtonTx: #515e66;
+$saveButtonBg: #490745;
+$saveButtonTx: #fff;
 
 $cancelButtonBg: #515e66;
 $cancelButtonTx: #ffffff;
 
-$editButtonBg: #2ed0f0;
+$editButtonBg: #0d748e;
 $editButtonTx: #ffffff;
 
 $approveButtonBg: #008000;
@@ -22,8 +22,8 @@ $rejectButtonTx: #ffffff;
 
 
 /* Header variables */
-$headerBG: #e5e9ec;
-$headerLogo: url(../images/logo.png) no-repeat 50% 50%;
+$headerBG: #271426;
+$headerLogo: url(../images/logo_2.png) no-repeat 50% 50%;
 $headerBorder: #e5e9ec;
 $logoWidth: 284px;
 $logoHeight: 35px;
@@ -32,8 +32,8 @@ $logoHeight: 35px;
 
 
 
-$footerBgColor: #e5e9ec;
-$footerFontColor: #000000;
+$footerBgColor: #271426;
+$footerFontColor: #dcdcdc;
 
 /* FOOTER ELEMENT VARIABLES don't modify below */
  // can have absolute/relative/fixed default value: fixed
@@ -44,58 +44,58 @@ $footerFontColor: #000000;
 
 
 /* LADING PAGE VARIABLES */
-$iconsBG: #FCD148;
+$iconsBG: #6e97c6;
 $iconsColor: #000;
 $iconsTxColor: #000;
 $white: #ffffff;
 $black: #000000;
 
-$landingIconsBg: #e5e9ec;
+$landingIconsBg: #f2f9ff;
 
 /* TIMESHEETS LANDING PAGE */
 
-$timeheetsHeadingBg: #cddae2;
+$timeheetsHeadingBg: #e2e2e2;
 $timeheetsHeadingTx: #515e66;
 
-$headDateTx: #ce7f29;
+$headDateTx: #350b33;
 
 
 $tableBorder: #cddae2;
-$tHeadBg: #ce7f29;
+$tHeadBg: #5d3c5b;
 $tHeadTx: #ffffff;
-$rowColor: #445159;
-$rowColorAlt: #5f6c74;
-$rowColorHover: #244d67;
-$rowColotTx: #cddae2;
+$rowColor: #f4e9ec;
+$rowColorAlt: #fdfafc;
+$rowColorHover: #f4e9ec;
+$rowColotTx: #39383d;
 
-$iconsTx: #000;
+$iconsTx: #350b33;
 
 
 
 /* TIMESHEETS LANDING PAGE */
 
 /* TIMESHEETS DETAILS PAGE */
-$detailsBg: #cddae2;
-$detailsTitleTx: #515e66;
-$detailsTitleTxSpl: #ce7f29;
+$detailsBg: #e2e2e2;
+$detailsTitleTx: #7e6b7d;
+$detailsTitleTxSpl: #4e0a4a;
 
-$detailsTableBg: #ce7f29;
+$detailsTableBg: #5d3c5b;
 $detailsTableTx:#cddae2;
 
-$detailsRowBg:#445159;
-$detailsRowBgAlt:#5f6c74;
-$detailsRowBgHover:#244d67;
-$detailsRowBgDirty:#2A2C3A;
+$detailsRowBg:#f4e9ec;
+$detailsRowBgAlt:#fdfafc;
+$detailsRowBgHover:#f4e9ec;
+$detailsRowBgDirty:#a79f9f;
 
-$detailsRowTx:#2ed0f0;
-$detailsRowAltTx:#f4c641;
+$detailsRowTx:#4e880f;
+$detailsRowAltTx:#271426;
 
 //modal styles
-$modalBgColor: #cddae2;
-$modalCloseTx : #ce7f29;
+$modalBgColor: #e7dae6;
+$modalCloseTx : #490745;
 
-$modalPrimaryHeadingTx:#ce7f29;
-$modalSecondaryHeadingTx: #515e66;
+$modalPrimaryHeadingTx:#5d3c5b;
+$modalSecondaryHeadingTx: #05467c;
 $modalOtherHeadingTx: #515e66;
 $modalAltHeadingTx:#1e85dc; 
 
