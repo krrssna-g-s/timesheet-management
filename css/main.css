@@ -464,7 +464,7 @@ select {
   background: transparent;
   font-family: "Tahoma", verdana, sans-serfif;
   font-size: 13px;
-  color: #deefc4;
+  color: #515e66;
   border: none;
   outline: none;
   display: inline-block;
@@ -484,7 +484,7 @@ select {
 /* line 166, ../sass/utilities/_mixins.scss */
 label {
   position: relative;
-  background: #05893d;
+  background: #a8aeb2;
   display: block;
   width: 100%;
   overflow: hidden;
@@ -499,7 +499,7 @@ label {
 label:after {
   content: '>' !important;
   font: 14px "Consolas", monospace;
-  color: #deefc4;
+  color: #515e66;
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
@@ -631,7 +631,7 @@ label:after {
 }
 /* line 4, ../sass/components/_header.scss */
 .tms header {
-  background: white;
+  background: #e5e9ec;
   height: 50px;
   display: block;
   text-align: center;
@@ -639,26 +639,25 @@ label:after {
   top: 0;
   width: 100%;
   z-index: 2;
-  border-bottom: 5px solid #008300;
 }
 /* line 14, ../sass/components/_header.scss */
 .tms header a {
   border: none;
   text-decoration: none;
-  background: url(../images/global-homepage-bp-logo-image.png) no-repeat 50% 50%;
+  background: url(../images/logo.png) no-repeat 50% 50%;
   width: 284px;
   height: 35px;
   display: block;
   text-indent: -9999px;
-  margin-top: 5px;
-  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
   margin-left: auto;
   margin-right: auto;
 }
 /* line 14, ../sass/components/_footer.scss */
 .tms .footerIconsTray, .tms footer {
   position: fixed;
-  background: #005900;
+  background: #e5e9ec;
   display: block;
   bottom: 0;
   width: 100%;
@@ -679,7 +678,7 @@ label:after {
   text-align: center;
   font-family: "Tahoma", verdana, sans-serfif;
   font-size: 10px;
-  color: #deefc4;
+  color: black;
   text-transform: uppercase;
   padding-top: 10px;
   padding-bottom: 8px;
@@ -695,7 +694,7 @@ label:after {
   position: relative;
   font-size: 26px;
   text-decoration: none;
-  color: #deefc4;
+  color: black;
 }
 /* line 1, ../sass/components/_modal.scss */
 .tms .modalOveray {
@@ -710,12 +709,20 @@ label:after {
 /* line 10, ../sass/components/_modal.scss */
 .tms .modal {
   position: fixed;
-  width: 100%;
+  width: 90%;
   height: auto;
-  background: white;
+  background: #cddae2;
   padding: 10px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
   z-index: 500;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -45%;
   display: none;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -730,7 +737,7 @@ label:after {
 .tms .modal:after {
   clear: both;
 }
-/* line 23, ../sass/components/_modal.scss */
+/* line 27, ../sass/components/_modal.scss */
 .tms .modal .close {
   font-family: "Tahoma", verdana, sans-serfif;
   font-size: 12px;
@@ -738,16 +745,16 @@ label:after {
   text-transform: uppercase;
   text-decoration: none;
 }
-/* line 28, ../sass/components/_modal.scss */
+/* line 32, ../sass/components/_modal.scss */
 .tms .modal .close:before {
   content: '';
 }
-/* line 33, ../sass/components/_modal.scss */
+/* line 37, ../sass/components/_modal.scss */
 .tms .preloader {
   position: fixed;
   width: 60%;
   height: 80px;
-  background: white url(../images/loader.gif) no-repeat 50% 50%;
+  background: #cddae2 url(../images/loader.gif) no-repeat 50% 50%;
   padding: 10px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -779,7 +786,7 @@ label:after {
 }
 /* line 10, ../sass/components/_landing.scss */
 .tms .container .home-bg {
-  background: #deefc4;
+  background: #e5e9ec;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
@@ -805,7 +812,7 @@ label:after {
 .tms .container .home-bg a:before {
   content: "\e609";
   font-size: 96px;
-  color: #239a44;
+  color: #fcd148;
 }
 /* line 34, ../sass/components/_landing.scss */
 .tms .container .home-bg a i {
@@ -900,10 +907,10 @@ label:after {
   top: 60px;
   width: 100%;
   z-index: 2;
-  background: #dddee0;
+  background: #cddae2;
   font-family: "Myriad Pro", verdana, sans-serfif;
   font-size: 22px;
-  color: #0d8234;
+  color: #515e66;
   text-transform: uppercase;
   font-weight: normal;
 }
@@ -933,7 +940,7 @@ label:after {
   padding: 8px 5px 5px 5px;
   font-family: "Tahoma", verdana, sans-serfif;
   font-size: 13px;
-  color: #005900;
+  color: #ce7f29;
 }
 /* line 129, ../sass/components/_landing.scss */
 .tms .container.timesheetContainer .date-container span ul {
@@ -950,7 +957,7 @@ label:after {
   overflow: hidden;
   font-size: 26px;
   cursor: pointer;
-  color: #005900;
+  color: black;
 }
 /* line 152, ../sass/components/_landing.scss */
 .tms .container.timesheetContainer .date-container span:nth-child(2) {
@@ -959,7 +966,7 @@ label:after {
 }
 /* line 157, ../sass/components/_landing.scss */
 .tms .container.timesheetContainer .table-bg {
-  background: white;
+  background: #cddae2;
   padding: 1px;
   margin-top: 10px;
   border: none;
@@ -970,7 +977,7 @@ label:after {
 }
 /* line 165, ../sass/components/_landing.scss */
 .tms .container.timesheetContainer .table-bg table thead {
-  background: #023718;
+  background: #ce7f29;
   font-family: "Tahoma", verdana, sans-serfif;
   font-size: 12px;
   color: white;
@@ -989,31 +996,31 @@ label:after {
 }
 /* line 181, ../sass/components/_landing.scss */
 .tms .container.timesheetContainer .table-bg table tbody tr:nth-child(even) {
-  background: #71a277;
+  background: #445159;
 }
 /* line 184, ../sass/components/_landing.scss */
 .tms .container.timesheetContainer .table-bg table tbody tr:nth-child(odd) {
-  background: #e5f1ea;
+  background: #5f6c74;
 }
 /* line 187, ../sass/components/_landing.scss */
 .tms .container.timesheetContainer .table-bg table tbody td {
   padding: 10px 10px 10px 10px;
   font-family: "Tahoma", verdana, sans-serfif;
   font-size: 11px;
-  color: #0c2717;
+  color: #cddae2;
   text-transform: uppercase;
-  border-bottom: 1px solid white;
-  border-top: 1px solid white;
+  border-bottom: 1px solid #cddae2;
+  border-top: 1px solid #cddae2;
   border-collapse: collapse;
   cursor: pointer;
 }
 /* line 196, ../sass/components/_landing.scss */
 .tms .container.timesheetContainer .table-bg table tbody tr:hover, .tms .container.timesheetContainer .table-bg table tbody tr.changed {
-  background: #26754d;
+  background: #244d67;
 }
 /* line 1, ../sass/components/_details.scss */
 .tms .details-content {
-  background: #dddee0;
+  background: #cddae2;
 }
 /* line 3, ../sass/components/_details.scss */
 .tms .details-content h2 {
@@ -1036,7 +1043,7 @@ label:after {
 }
 /* line 12, ../sass/components/_details.scss */
 .tms .details-content h2 strong span:nth-child(2) {
-  color: #005900;
+  color: #ce7f29;
 }
 /* line 16, ../sass/components/_details.scss */
 .tms .details-content h2 strong:nth-child(2) {
@@ -1054,7 +1061,7 @@ label:after {
 /* line 26, ../sass/components/_details.scss */
 .tms .details-content table {
   width: 100%;
-  background: #175f4b;
+  background: #ce7f29;
 }
 /* line 30, ../sass/components/_details.scss */
 .tms .details-content table td {
@@ -1075,17 +1082,17 @@ label:after {
 .tms .details-content .listing ul li {
   font-family: "Tahoma", verdana, sans-serfif;
   font-size: 12px;
-  color: #19545f;
+  color: #f4c641;
   padding: 5px;
   padding-left: 10px;
   padding-right: 10px;
   cursor: pointer;
-  background: #71a277;
+  background: #445159;
   text-transform: uppercase;
 }
 /* line 51, ../sass/components/_details.scss */
 .tms .details-content .listing ul li:nth-child(even) {
-  background: #e5f1ea;
+  background: #5f6c74;
 }
 /* line 54, ../sass/components/_details.scss */
 .tms .details-content .listing ul li strong {
@@ -1094,7 +1101,7 @@ label:after {
 }
 /* line 58, ../sass/components/_details.scss */
 .tms .details-content .listing ul li span {
-  color: #585a3f;
+  color: #2ed0f0;
   display: block;
   padding-top: 3px;
 }
@@ -1102,11 +1109,11 @@ label:after {
 .tms .details-content .listing ul li span strong {
   display: block;
   font-weight: normal;
-  color: #19545f;
+  color: #f4c641;
 }
 /* line 69, ../sass/components/_details.scss */
 .tms .details-content .listing ul li:hover, .tms .details-content .listing ul li.changed {
-  background: #26754d;
+  background: #244d67;
 }
 /* line 74, ../sass/components/_details.scss */
 .tms .details-content .listing .rowContainer {
@@ -1114,19 +1121,19 @@ label:after {
 }
 /* line 76, ../sass/components/_details.scss */
 .tms .details-content .listing .rowContainer.dirty li {
-  background: #a5a5a5 !important;
+  background: #2a2c3a !important;
 }
 /* line 83, ../sass/components/_details.scss */
 .tms .details-content .listing .rowContainer:nth-child(even) li {
-  background: #e5f1ea;
+  background: #5f6c74;
 }
 /* line 85, ../sass/components/_details.scss */
 .tms .details-content .listing .rowContainer:nth-child(even) li:hover, .tms .details-content .listing .rowContainer:nth-child(even) li.changed {
-  background: #26754d;
+  background: #244d67;
 }
 /* line 91, ../sass/components/_details.scss */
 .tms .details-content .listing .rowContainer li {
-  background: #71a277;
+  background: #445159;
 }
 /* line 97, ../sass/components/_details.scss */
 .tms .details-content .accordion {
@@ -1134,7 +1141,7 @@ label:after {
 }
 /* line 99, ../sass/components/_details.scss */
 .tms .details-content .accordion h2 {
-  background: #dddee0;
+  background: #cddae2;
 }
 /* line 103, ../sass/components/_details.scss */
 .tms .details-content .accordion .listing {
@@ -1163,7 +1170,7 @@ label:after {
 .tms .modal-content h3, .tms .modal-content h4, .tms .modal-content h5 {
   font-family: "Tahoma", verdana, sans-serfif;
   font-size: 13px;
-  color: #2c990a;
+  color: #ce7f29;
   font-weight: normal;
   text-transform: uppercase;
   margin: 0;
@@ -1202,7 +1209,7 @@ label:after {
   width: 14.28571%;
   font-family: "Tahoma", verdana, sans-serfif;
   font-size: 11px;
-  color: #2c990a;
+  color: #ce7f29;
   padding: 1px;
   text-transform: uppercase;
 }
@@ -1244,7 +1251,7 @@ label:after {
 .tms .modal-content .icons-view a:before {
   content: "\e609";
   font-size: 76px;
-  color: #239a44;
+  color: #fcd148;
 }
 /* line 190, ../sass/components/_details.scss */
 .tms .modal-content .icons-view a i:before {
@@ -1319,7 +1326,7 @@ label:after {
 }
 /* line 254, ../sass/components/_details.scss */
 .tms .modal-content .task-controller p:first-child {
-  color: #2c990a;
+  color: #ce7f29;
 }
 /* line 257, ../sass/components/_details.scss */
 .tms .modal-content .task-controller p span {

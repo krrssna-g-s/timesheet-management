@@ -521,8 +521,8 @@ label:after {
   border-radius: 6px;
   font-family: "Tahoma", verdana, sans-serfif;
   font-size: 13px;
-  color: #515e66;
-  background: #f4c641;
+  color: white;
+  background: #490745;
   cursor: pointer;
   display: inline-block;
   text-decoration: none;
@@ -532,8 +532,8 @@ label:after {
 }
 /* line 12, ../sass/utilities/_buttons.scss */
 .btn.save {
-  background: #f4c641;
-  color: #515e66;
+  background: #490745;
+  color: white;
 }
 /* line 16, ../sass/utilities/_buttons.scss */
 .btn.cancel {
@@ -542,7 +542,7 @@ label:after {
 }
 /* line 20, ../sass/utilities/_buttons.scss */
 .btn.edit {
-  background: #2ed0f0;
+  background: #0d748e;
   color: white;
 }
 /* line 24, ../sass/utilities/_buttons.scss */
@@ -631,7 +631,7 @@ label:after {
 }
 /* line 4, ../sass/components/_header.scss */
 .tms header {
-  background: #e5e9ec;
+  background: #271426;
   height: 50px;
   display: block;
   text-align: center;
@@ -639,26 +639,25 @@ label:after {
   top: 0;
   width: 100%;
   z-index: 2;
-  border-bottom: 5px solid #e5e9ec;
 }
 /* line 14, ../sass/components/_header.scss */
 .tms header a {
   border: none;
   text-decoration: none;
-  background: url(../images/logo.png) no-repeat 50% 50%;
+  background: url(../images/logo_2.png) no-repeat 50% 50%;
   width: 284px;
   height: 35px;
   display: block;
   text-indent: -9999px;
-  margin-top: 5px;
-  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
   margin-left: auto;
   margin-right: auto;
 }
 /* line 14, ../sass/components/_footer.scss */
 .tms .footerIconsTray, .tms footer {
   position: fixed;
-  background: #e5e9ec;
+  background: #271426;
   display: block;
   bottom: 0;
   width: 100%;
@@ -679,7 +678,7 @@ label:after {
   text-align: center;
   font-family: "Tahoma", verdana, sans-serfif;
   font-size: 10px;
-  color: black;
+  color: gainsboro;
   text-transform: uppercase;
   padding-top: 10px;
   padding-bottom: 8px;
@@ -695,7 +694,7 @@ label:after {
   position: relative;
   font-size: 26px;
   text-decoration: none;
-  color: black;
+  color: gainsboro;
 }
 /* line 1, ../sass/components/_modal.scss */
 .tms .modalOveray {
@@ -710,12 +709,20 @@ label:after {
 /* line 10, ../sass/components/_modal.scss */
 .tms .modal {
   position: fixed;
-  width: 100%;
+  width: 90%;
   height: auto;
-  background: #cddae2;
+  background: #e7dae6;
   padding: 10px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
   z-index: 500;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -45%;
   display: none;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -730,24 +737,24 @@ label:after {
 .tms .modal:after {
   clear: both;
 }
-/* line 23, ../sass/components/_modal.scss */
+/* line 27, ../sass/components/_modal.scss */
 .tms .modal .close {
   font-family: "Tahoma", verdana, sans-serfif;
   font-size: 12px;
-  color: #ce7f29;
+  color: #490745;
   text-transform: uppercase;
   text-decoration: none;
 }
-/* line 28, ../sass/components/_modal.scss */
+/* line 32, ../sass/components/_modal.scss */
 .tms .modal .close:before {
   content: '';
 }
-/* line 33, ../sass/components/_modal.scss */
+/* line 37, ../sass/components/_modal.scss */
 .tms .preloader {
   position: fixed;
   width: 60%;
   height: 80px;
-  background: #cddae2 url(../images/loader.gif) no-repeat 50% 50%;
+  background: #e7dae6 url(../images/loader.gif) no-repeat 50% 50%;
   padding: 10px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -779,7 +786,7 @@ label:after {
 }
 /* line 10, ../sass/components/_landing.scss */
 .tms .container .home-bg {
-  background: #e5e9ec;
+  background: #f2f9ff;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
@@ -805,7 +812,7 @@ label:after {
 .tms .container .home-bg a:before {
   content: "\e609";
   font-size: 96px;
-  color: #fcd148;
+  color: #6e97c6;
 }
 /* line 34, ../sass/components/_landing.scss */
 .tms .container .home-bg a i {
@@ -900,7 +907,7 @@ label:after {
   top: 60px;
   width: 100%;
   z-index: 2;
-  background: #cddae2;
+  background: #e2e2e2;
   font-family: "Myriad Pro", verdana, sans-serfif;
   font-size: 22px;
   color: #515e66;
@@ -933,7 +940,7 @@ label:after {
   padding: 8px 5px 5px 5px;
   font-family: "Tahoma", verdana, sans-serfif;
   font-size: 13px;
-  color: #ce7f29;
+  color: #350b33;
 }
 /* line 129, ../sass/components/_landing.scss */
 .tms .container.timesheetContainer .date-container span ul {
@@ -950,7 +957,7 @@ label:after {
   overflow: hidden;
   font-size: 26px;
   cursor: pointer;
-  color: black;
+  color: #350b33;
 }
 /* line 152, ../sass/components/_landing.scss */
 .tms .container.timesheetContainer .date-container span:nth-child(2) {
@@ -970,7 +977,7 @@ label:after {
 }
 /* line 165, ../sass/components/_landing.scss */
 .tms .container.timesheetContainer .table-bg table thead {
-  background: #ce7f29;
+  background: #5d3c5b;
   font-family: "Tahoma", verdana, sans-serfif;
   font-size: 12px;
   color: white;
@@ -989,18 +996,18 @@ label:after {
 }
 /* line 181, ../sass/components/_landing.scss */
 .tms .container.timesheetContainer .table-bg table tbody tr:nth-child(even) {
-  background: #445159;
+  background: #f4e9ec;
 }
 /* line 184, ../sass/components/_landing.scss */
 .tms .container.timesheetContainer .table-bg table tbody tr:nth-child(odd) {
-  background: #5f6c74;
+  background: #fdfafc;
 }
 /* line 187, ../sass/components/_landing.scss */
 .tms .container.timesheetContainer .table-bg table tbody td {
   padding: 10px 10px 10px 10px;
   font-family: "Tahoma", verdana, sans-serfif;
   font-size: 11px;
-  color: #cddae2;
+  color: #39383d;
   text-transform: uppercase;
   border-bottom: 1px solid #cddae2;
   border-top: 1px solid #cddae2;
@@ -1009,11 +1016,11 @@ label:after {
 }
 /* line 196, ../sass/components/_landing.scss */
 .tms .container.timesheetContainer .table-bg table tbody tr:hover, .tms .container.timesheetContainer .table-bg table tbody tr.changed {
-  background: #244d67;
+  background: #f4e9ec;
 }
 /* line 1, ../sass/components/_details.scss */
 .tms .details-content {
-  background: #cddae2;
+  background: #e2e2e2;
 }
 /* line 3, ../sass/components/_details.scss */
 .tms .details-content h2 {
@@ -1030,13 +1037,13 @@ label:after {
 .tms .details-content h2 strong span {
   font-family: "Tahoma", verdana, sans-serfif;
   font-size: 15px;
-  color: #515e66;
+  color: #7e6b7d;
   margin-right: 5px;
-  color: #515e66;
+  color: #7e6b7d;
 }
 /* line 12, ../sass/components/_details.scss */
 .tms .details-content h2 strong span:nth-child(2) {
-  color: #ce7f29;
+  color: #4e0a4a;
 }
 /* line 16, ../sass/components/_details.scss */
 .tms .details-content h2 strong:nth-child(2) {
@@ -1054,7 +1061,7 @@ label:after {
 /* line 26, ../sass/components/_details.scss */
 .tms .details-content table {
   width: 100%;
-  background: #ce7f29;
+  background: #5d3c5b;
 }
 /* line 30, ../sass/components/_details.scss */
 .tms .details-content table td {
@@ -1075,17 +1082,17 @@ label:after {
 .tms .details-content .listing ul li {
   font-family: "Tahoma", verdana, sans-serfif;
   font-size: 12px;
-  color: #f4c641;
+  color: #271426;
   padding: 5px;
   padding-left: 10px;
   padding-right: 10px;
   cursor: pointer;
-  background: #445159;
+  background: #f4e9ec;
   text-transform: uppercase;
 }
 /* line 51, ../sass/components/_details.scss */
 .tms .details-content .listing ul li:nth-child(even) {
-  background: #5f6c74;
+  background: #fdfafc;
 }
 /* line 54, ../sass/components/_details.scss */
 .tms .details-content .listing ul li strong {
@@ -1094,7 +1101,7 @@ label:after {
 }
 /* line 58, ../sass/components/_details.scss */
 .tms .details-content .listing ul li span {
-  color: #2ed0f0;
+  color: #4e880f;
   display: block;
   padding-top: 3px;
 }
@@ -1102,11 +1109,11 @@ label:after {
 .tms .details-content .listing ul li span strong {
   display: block;
   font-weight: normal;
-  color: #f4c641;
+  color: #271426;
 }
 /* line 69, ../sass/components/_details.scss */
 .tms .details-content .listing ul li:hover, .tms .details-content .listing ul li.changed {
-  background: #244d67;
+  background: #f4e9ec;
 }
 /* line 74, ../sass/components/_details.scss */
 .tms .details-content .listing .rowContainer {
@@ -1114,19 +1121,19 @@ label:after {
 }
 /* line 76, ../sass/components/_details.scss */
 .tms .details-content .listing .rowContainer.dirty li {
-  background: #2a2c3a !important;
+  background: #a79f9f !important;
 }
 /* line 83, ../sass/components/_details.scss */
 .tms .details-content .listing .rowContainer:nth-child(even) li {
-  background: #5f6c74;
+  background: #fdfafc;
 }
 /* line 85, ../sass/components/_details.scss */
 .tms .details-content .listing .rowContainer:nth-child(even) li:hover, .tms .details-content .listing .rowContainer:nth-child(even) li.changed {
-  background: #244d67;
+  background: #f4e9ec;
 }
 /* line 91, ../sass/components/_details.scss */
 .tms .details-content .listing .rowContainer li {
-  background: #445159;
+  background: #f4e9ec;
 }
 /* line 97, ../sass/components/_details.scss */
 .tms .details-content .accordion {
@@ -1134,7 +1141,7 @@ label:after {
 }
 /* line 99, ../sass/components/_details.scss */
 .tms .details-content .accordion h2 {
-  background: #cddae2;
+  background: #e2e2e2;
 }
 /* line 103, ../sass/components/_details.scss */
 .tms .details-content .accordion .listing {
@@ -1156,14 +1163,14 @@ label:after {
 .tms .modal-content {
   font-family: "Tahoma", verdana, sans-serfif;
   font-size: 13px;
-  color: #515e66;
+  color: #05467c;
   text-transform: uppercase;
 }
 /* line 123, ../sass/components/_details.scss */
 .tms .modal-content h3, .tms .modal-content h4, .tms .modal-content h5 {
   font-family: "Tahoma", verdana, sans-serfif;
   font-size: 13px;
-  color: #ce7f29;
+  color: #5d3c5b;
   font-weight: normal;
   text-transform: uppercase;
   margin: 0;
@@ -1183,7 +1190,7 @@ label:after {
 }
 /* line 141, ../sass/components/_details.scss */
 .tms .modal-content h4 {
-  color: #515e66;
+  color: #05467c;
 }
 /* line 144, ../sass/components/_details.scss */
 .tms .modal-content h5 {
@@ -1202,7 +1209,7 @@ label:after {
   width: 14.28571%;
   font-family: "Tahoma", verdana, sans-serfif;
   font-size: 11px;
-  color: #ce7f29;
+  color: #5d3c5b;
   padding: 1px;
   text-transform: uppercase;
 }
@@ -1244,7 +1251,7 @@ label:after {
 .tms .modal-content .icons-view a:before {
   content: "\e609";
   font-size: 76px;
-  color: #fcd148;
+  color: #6e97c6;
 }
 /* line 190, ../sass/components/_details.scss */
 .tms .modal-content .icons-view a i:before {
@@ -1319,7 +1326,7 @@ label:after {
 }
 /* line 254, ../sass/components/_details.scss */
 .tms .modal-content .task-controller p:first-child {
-  color: #ce7f29;
+  color: #5d3c5b;
 }
 /* line 257, ../sass/components/_details.scss */
 .tms .modal-content .task-controller p span {

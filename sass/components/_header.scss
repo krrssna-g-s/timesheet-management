@@ -10,7 +10,7 @@ header{
 	top: 0;
 	width: 100%;
 	z-index:2;
-	border-bottom: 5px solid $headerBorder;
+
 	a{
 		border: none;
 		text-decoration: none;
@@ -20,8 +20,8 @@ header{
 		height: $logoHeight;
 		display: block;
 		text-indent: -9999px;
-		@include margin-top(5px);
-		@include margin-bottom(10px);
+		@include margin-top(10px);
+		@include margin-bottom(5px);
 		@include margin-left(auto);
 		@include margin-right(auto);
 	}
